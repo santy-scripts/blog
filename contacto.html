@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =================================================================== -->
+    <!-- ESTILOS -->
+    <!-- =================================================================== -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+
+    <!-- =================================================================== -->
+    <!-- SCRIPTS -->
+    <!-- =================================================================== -->
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/login.js" defer></script>
+    <script src="assets/js/contacto.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="assets/js/themes.js" defer></script>
+
+    <title>Pagina Web</title>
+</head>
+
+<body>
+    
+    <div class="layout">
+
+        <!-- =============================================================== -->
+        <!-- MENU ENCABEZADO -->
+        <!-- =============================================================== -->
+        <header class="layout__header">
+            
+            <div class="header__logo">
+                <h1 class="logo__text">PROYECTO JS</h1>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="list__item">
+                        <a href="index.html" class="list__link">INICIO</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="reloj.html" class="list__link">RELOJ</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="sobre-mi.html" class="list__link">SOBRE MI</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="contacto.html" class="list__link">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+
+        <!-- =================================================================== -->
+        <!-- ARTICULOS / CONTENIDO PRINCIPAL -->
+        <!-- =================================================================== -->
+        <main class="layout__main">
+
+
+            <form class="main__contact">
+
+                <div class="contact__group">
+                    <label class="contact__label" for="name">Nombre</label>
+                    <input class="contact__input" type="text" id="name" name="name" placeholder="Tu nombre..">
+                </div>
+                
+                <div class="contact__group">
+                    <label class="contact__label" for="surname">Apellido</label>
+                    <input class="contact__input" type="text" id="surname" name="surname" placeholder="Tu Apellido..">
+                </div>
+
+                <div class="contact__group">
+                    <label class="contact__label" for="email">Email</label>
+                    <input class="contact__input" type="text" id="email" name="email" placeholder="Tu Correo..">
+                </div>
+
+                <div class="contact__group">
+                    <label class="contact__label" for="gender">Genero</label>
+                    <select class="contact__select" id="gender" name="gender">
+                    <option class="select__option" value="hombre">Hombre</option>
+                    <option class="select__option" value="mujer">Mujer</option>
+                    </select>
+                </div>
+
+                <div class="contact__group">
+                    <label class="contact__label" for="date">Fecha de nacimiento</label>
+                    <input class="contact__input" type="date" id="date" name="date">
+                </div>
+
+                <div class="contact__group">
+                    <label class="contact__label" for="edad">Edad</label>
+                    <input class="contact__input" type="number" id="edad" name="edad">
+                </div>
+
+                <input class="contact__sumbit" type="submit" value="Submit">
+
+            </form>
+
+            
+           
+        </main>
+        
+
+        <!-- =================================================================== -->
+        <!-- BARRA LATERAL -->
+        <!-- =================================================================== -->
+        <aside class="layout__aside">
+
+            <header class="asside__header">
+                <div class="header__container-title">
+                    <h3 class="header__title">
+                        <span class="title__span">Quien Soy</span>
+                    </h3>
+                </div>
+
+                <div class="header__container-container-img">
+                    <img class="header__img" src="./assets/img/caracol.jpg" alt="caracol">
+                </div>
+
+                <p class="header__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex a odio ut deserunt pariatur at perspiciatis porro veritatis optio culpa? Inventore soluta velit neque error aperiam sunt, vitae molestias sequi!
+                </p>
+
+            </header>
+
+            <form class="aside__login">
+
+                <div class="login__container-title">
+                    <h3 class="login__title">
+                        <span class="login__span">Identificate</span>
+                    </h3>
+                </div>
+
+                <div class="login__from-group">
+
+                    <label class="login__label" for="name">Nombre: </label><br>
+                    <input type="text" id="name" name="name" class="login__input" required>
+
+                </div>
+
+                <div class="login__from-group">
+
+                    <label class="login__label" for="email">Email: </label><br>
+                    <input type="email" id="email" name="email" class="login__input" required>
+
+                </div>
+
+                <div class="login__from-group">
+
+                    <label class="login__label" for="pass">Contraseña: </label><br>
+                    <input type="password" id="pass" name="pass" class="login__input" required>
+
+                </div>
+
+                
+                <button class="login__submit" type="submit" id="login">Login</button>
+                            
+            </form>
+
+        </aside>
+
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- Footer -->
+    <!-- ======================================================================= -->
+    <footer class="footer">
+        <p class="footer__text">Todos los derechos reservados al desarrollador &copy;</p>
+        <p class="footer__top">Ir arriba</p>
+    </footer>
+
+    <!-- ======================================================================= -->
+    <!-- cambiador de temas -->
+    <!-- ======================================================================= -->
+    <div class="themes">
+        <div class="themes__green"></div>
+        <div class="themes__red"></div>
+        <div class="themes__blue"></div>
+    </div>
+
+</body>
+</html>
